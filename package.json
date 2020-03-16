@@ -12,7 +12,7 @@
   "author": "huobichain",
   "license": "MIT",
   "dependencies": {
-    "muta-sdk": "^0.7.0-alpha.6",
+    "muta-sdk": "^0.8.0-alpha.0",
     "random-bytes": "^1.0.0"
   }
 }
