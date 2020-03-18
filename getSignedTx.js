@@ -12,15 +12,15 @@ const CHAIN_CONFIG = {
     timeoutGap: 1500,//表示一笔交易发出后，最多允许几个块的延迟.如果随着链的进行, block 超出了timeout_gap 的设置但是交易仍然没有上链,那么这笔交易就被认为无效了.
 };
 const TRANSFER_CONFIG = {
-    assetId: "fc785b61468d3c27d6b976cda679a1e8901b2917c266c4391fa723602cacf816",//需要转账的资产id
-    mnemonic: 'lock donate happy pipe runway design figure mobile transfer used current resource',//转出账户的助记词
+    assetId: "",//需要转账的资产id
+    mnemonic: "",//转出账户的助记词
     accountIndex: 0,//通过助记词初始化的钱包中的第几个账户
-    toAddress: "0xb6f6cae2efad8b55c0627f3f986df00c13cee64a",//转入资产的地址
-    amount: 5,//转入资产的数量
+    toAddress: "",//转入资产的地址
+    amount: 1,//转入资产的数量
 };
 
 /**
- *
+ * 构造交易并签名，得到的交易可以直接到https://testnet.huobichain.com/tools/send发送上联。
  * @param height 区块当前高度，用于跟timeoutGap一起计算timeOut。
  * @returns {Promise<void>}
  */
