@@ -5,23 +5,24 @@
 const muta_sdk = require('muta-sdk');
 const Muta = muta_sdk.Muta;
 
-let words = "";
+let words = "";//如果已经有助记词，填写在这里，程序会计算出对应的地址和公钥
 
 function main() {
-
     if (words === undefined || words === "" || words.split(" ").length !== 12) {
         const wallet = Muta.hdWallet;
         words = wallet.generateMnemonic();
     }
-    console.log('words:\t' + words);
-
     const hdWallet = new Muta.hdWallet(words);
     const account = hdWallet.deriveAccount(0);
     const address = account.address;
     const pubKey = account.publicKey;
 
-    console.log('Address:\t' + address);
-    console.log('PubKey:\t' + pubKey);
+    console.log({
+        words:words,
+        Address:address,
+        PubKey:pubKey
+    });
+
 }
 
 main();
