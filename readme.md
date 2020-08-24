@@ -10,12 +10,21 @@
 
 ## 运行
 
-获取助记词以及地址：
+生成钱包地址：
 
-> node getAddress.js
+> npm run address
+
+根据助记词获取钱包地址（命令形式）：
+
+> npm run address "xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx"
+
+根据助记词获取钱包地址（配置形式）：
+
+> // 在根目录的config.json里，填写正确的助记词，words字段，运行以下命令
+> npm run address
 
 构造签名交易
 
 修改参数(包括资产id，转入账户，金额等），然后运行，最后的参数是最新区块的高度
 
-> node getSignedTx.js 123456
+> npm run tx xxx

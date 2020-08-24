@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "target": "es2015",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["node_modules/@types",
+      "src/types/index.d.ts"
+    ]
+  }
+}

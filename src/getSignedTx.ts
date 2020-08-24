@@ -1,6 +1,3 @@
-/**
- * 构造签名交易
- */
 const muta_sdk = require('muta-sdk');
 const Muta = muta_sdk.Muta;
 const utils = require('muta-sdk/build/main/utils');
