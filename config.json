@@ -1,5 +1,10 @@
 {
-    "words": "",
+    "mnemonic": "crumble maze offer scorpion random claim inform version print retire theory document",
+    "privateKey": "0x0000000000000000000000000000000000000000000000000000000000000001",
     "chainId": "0xa0689c223fa2b49648b574561586ec919ea2af8d709812dde03992d1c6872cd5",
-    "timeoutGap": 1500
+    "assetId": "0xf56924db538e77bb5951eb5ff0d02b88983c49c45eea30e8ae3e7234b311436c",
+    "toAddress": "",
+    "timeoutGap": 50000,
+    "amount": 500,
+    "lastHeight": 10000
 }

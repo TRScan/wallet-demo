@@ -4,6 +4,7 @@
 
 ## 安装
 
+首先需要安装[Node环境](https://nodejs.org/)；
 获取代码后，在项目文件夹运行
 
 > npm install
@@ -20,11 +21,26 @@
 
 根据助记词获取钱包地址（配置形式）：
 
-> // 在根目录的config.json里，填写正确的助记词，words字段，运行以下命令
+- 在根目录的config.json里，填写正确的助记词，mnemonic字段，运行以下命令
 > npm run address
 
-构造签名交易
+构造签名交易（命令形式）：
 
-修改参数(包括资产id，转入账户，金额等），然后运行，最后的参数是最新区块的高度
+- 块最新高度，可省略
+> npm run tx [块最新高度]
 
-> npm run tx xxx
+
+config.json介绍
+
+```
+{
+    "mnemonic": "crumble maze offer scorpion random claim inform version print retire theory document", // 助记词，不填则随机生成
+    "privateKey": "0x0000000000000000000000000000000000000000000000000000000000000001", // 私钥，发送交易必填
+    "chainId": "0xa0689c223fa2b49648b574561586ec919ea2af8d709812dde03992d1c6872cd5", // 链ID，必填
+    "assetId": "0xf56924db538e77bb5951eb5ff0d02b88983c49c45eea30e8ae3e7234b311436c", // 资产ID，必填
+    "toAddress": "", // 接收方地址，不填则随机生成
+    "timeoutGap": 50000, // 广播超时时间
+    "amount": 500, // 转账金额
+    "lastHeight": 10000 // 最新区块高度
+}
+```

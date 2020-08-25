@@ -13,10 +13,11 @@
   "author": "huobichain",
   "license": "MIT",
   "dependencies": {
+    "@mutadev/account": "^0.2.0-rc.0",
+    "@mutadev/client": "^0.2.0-rc.0",
     "@mutadev/muta-sdk": "^0.2.0-rc.0",
     "@mutadev/utils": "^0.2.0-rc.0",
-    "@mutadev/wallet": "^0.2.0-rc.0",
-    "random-bytes": "^1.0.0"
+    "@mutadev/wallet": "^0.2.0-rc.0"
   },
   "devDependencies": {
     "@types/node": "^14.6.0",
